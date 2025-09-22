@@ -60,4 +60,15 @@ $hasilTidakIdentik = $a !== $b;
 echo "<br><br>Operator identitas <br><br>";
 echo "Hasil Identik       : {$hasilIdentik} <br>";
 echo "Hasil Tidak Identik : {$hasilTidakIdentik} <br>";
+
+$totalKursi = 45;
+$kursiTerisi = 28;
+
+$kursiKosong = $totalKursi - $kursiTerisi;
+$persentaseKosong = ($kursiKosong / $totalKursi) * 100;
+
+echo "<br><br> Penghitung Kursi <br><br>";
+echo "Total kursi : $totalKursi<br>";
+echo "Jumlah kursi kosong : $kursiKosong<br>";
+echo "Persentase kursi kosong: " . $persentaseKosong . "%";
 ?>
