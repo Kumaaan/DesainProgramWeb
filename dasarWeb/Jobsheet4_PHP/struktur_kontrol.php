@@ -45,7 +45,7 @@ foreach ($skorUjian as $skor) {
 echo "<br><br>Total skor ujian adalah: $totalSkor";
 
 
-echo "<br><br><br>Nilai Mahasiswa<br><br>";
+echo "<br><br><br>Nilai Mahasiswa : <br><br>";
 $nilaiSiswa = [85, 92, 58, 64, 90, 55, 88, 79, 70, 96];
 
 foreach ($nilaiSiswa as $nilai) {
@@ -55,4 +55,17 @@ foreach ($nilaiSiswa as $nilai) {
     }
     echo "Nilai: $nilai (Lulus) <br>";
 }
+
+
+echo "<br><br><br>Sistem Penghitung Rata-rata : <br><br>";
+$nilai = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+
+sort($nilai);
+$nilaiBaru = array_slice($nilai, 2, 6); 
+
+$total = array_sum($nilaiBaru);
+$rata = $total / count($nilaiBaru);
+
+echo "Total nilai: $total<br>";
+echo "Rata-rata: $rata";
 ?>
