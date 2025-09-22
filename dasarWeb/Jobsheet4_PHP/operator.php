@@ -22,6 +22,7 @@ $hasilLebihBesar = $a > $b;
 $hasilLebihKecilSama = $a <= $b;
 $hasilLebihBesarSama = $a >= $b;
 
+echo "Operator perbandingan <br><br>";
 echo "Hasil Sama              : {$hasilSama} <br>";
 echo "Hasil Tidak Sama        : {$hasilTidakSama} <br>";
 echo "Hasil Lebih Kecil       : {$hasilLebihKecil} <br>";
