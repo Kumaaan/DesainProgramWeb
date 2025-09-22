@@ -75,7 +75,7 @@ $hargaAwal = 120000;
 $diskon = 0;
 
 if ($hargaAwal > 100000) {
-    $diskon = 0.20 * $hargaAwal; // 20% dari harga
+    $diskon = 0.20 * $hargaAwal;
 }
 
 $hargaAkhir = $hargaAwal - $diskon;
@@ -83,4 +83,15 @@ $hargaAkhir = $hargaAwal - $diskon;
 echo "Harga awal: Rp $hargaAwal<br>";
 echo "Diskon: Rp $diskon<br>";
 echo "Harga yang harus dibayar: Rp $hargaAkhir";
+
+
+echo "<br><br><br>Sistem Seleksi Pemain : <br><br>";
+$poin = 620; 
+
+echo "Total skor pemain adalah: $poin<br>";
+
+$hadiah = ($poin > 500) ? "YA" : "TIDAK";
+
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiah";
+
 ?>
