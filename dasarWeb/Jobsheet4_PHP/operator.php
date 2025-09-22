@@ -40,4 +40,24 @@ echo "Hasil And   : {$hasilAnd} <br>";
 echo "Hasil Or    : {$hasilor} <br>";
 echo "Hasil Not A : {$hasilNotA} <br>";
 echo "Hasil Not B : {$hasilNotB} <br>";
+
+$a1 = $a += $b;
+$a2 = $a -= $b;
+$a3 = $a *= $b;
+$a4 = $a /= $b;
+$a5 = $a %= $b;
+
+echo "<br><br>Operator gabungan <br><br>";
+echo "Hasil a += b : {$a1} <br>";
+echo "Hasil a -= b : {$a2} <br>";
+echo "Hasil a *= b : {$a3} <br>";
+echo "Hasil a /= b : {$a4} <br>";
+echo "Hasil a %= b : {$a5} <br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "<br><br>Operator identitas <br><br>";
+echo "Hasil Identik       : {$hasilIdentik} <br>";
+echo "Hasil Tidak Identik : {$hasilTidakIdentik} <br>";
 ?>
