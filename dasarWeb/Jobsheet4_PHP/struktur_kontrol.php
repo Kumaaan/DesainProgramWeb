@@ -68,4 +68,19 @@ $rata = $total / count($nilaiBaru);
 
 echo "Total nilai: $total<br>";
 echo "Rata-rata: $rata";
+
+
+echo "<br><br><br>Sistem Penghitung Diskon : <br><br>";
+$hargaAwal = 120000;
+$diskon = 0;
+
+if ($hargaAwal > 100000) {
+    $diskon = 0.20 * $hargaAwal; // 20% dari harga
+}
+
+$hargaAkhir = $hargaAwal - $diskon;
+
+echo "Harga awal: Rp $hargaAwal<br>";
+echo "Diskon: Rp $diskon<br>";
+echo "Harga yang harus dibayar: Rp $hargaAkhir";
 ?>
