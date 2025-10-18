@@ -31,10 +31,19 @@
         echo $new_text; // Output: "I like banana pie."
 
         echo "<br><br>";
-        $pattern = '/go*d/'; // Cocokkan "god", "good", "gooood", dll.
+        $pattern = '/go?d/'; // Cocokkan "god", "good", "gooood", dll.
         $text = 'god is good.';
         if (preg_match($pattern, $text, $matches)) {
             echo "Cocokkan: " . $matches[0];
+        } else {
+            echo "Tidak ada yang cocok!";
+        }
+
+        echo "<br><br>";
+        $pattern = '/go{1,2}d/'; // Menggunakan kuantifier '{n,m}'
+        $text = 'god is good.';
+        if (preg_match_all($pattern, $text, $matches)) {
+            echo "Cocokkan: " . implode(', ', $matches[0]);
         } else {
             echo "Tidak ada yang cocok!";
         }
